@@ -5,6 +5,7 @@ import { useState } from "react";
 import {
   ChevronDown,
 } from "lucide-react";
+import Whychooseus from "./whychooseus";
 
 export default function BusinessSolutionsPage() {
   const [splineLoaded, setSplineLoaded] = useState(false);
@@ -89,54 +90,7 @@ export default function BusinessSolutionsPage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-16">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-8 sm:mb-12 lg:mb-16 px-2 sm:px-0">
-            Why Choose Our{" "}
-            <span className="text-transparent bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text">
-              Solutions
-            </span>
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {[
-              {
-                title: "Interactive Experience",
-                description:
-                  "Engage with our 3D models and interactive demonstrations",
-                icon: "🎮",
-              },
-              {
-                title: "Cutting-edge Technology",
-                description:
-                  "Built with Next.js 15, TypeScript, and modern web standards",
-                icon: "🚀",
-              },
-              {
-                title: "Responsive Design",
-                description:
-                  "Perfect experience across all devices and screen sizes",
-                icon: "📱",
-              },
-            ].map((feature, index) => (
-              <div
-                key={index}
-                className="group p-6 sm:p-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl hover:from-gray-700 hover:to-gray-800 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl"
-              >
-                <div className="text-3xl sm:text-4xl mb-3 sm:mb-4 group-hover:animate-bounce text-center sm:text-left">
-                  {feature.icon}
-                </div>
-                <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4 text-center sm:text-left">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-300 leading-relaxed text-sm sm:text-base text-center sm:text-left">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     <Whychooseus/>
     </div>
   );
 }

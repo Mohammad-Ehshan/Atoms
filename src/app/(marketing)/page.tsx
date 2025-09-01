@@ -6,6 +6,7 @@ import Features from "@/components/marketing/features";
 import Hero from "@/components/marketing/hero";
 import Integration from "@/components/marketing/integration";
 import Pricing from "@/components/marketing/pricing";
+import Whychooseus from "../service/whychooseus";
 
 
 const HomePage = () => {
@@ -13,6 +14,7 @@ const HomePage = () => {
         <Wrapper className="py-20 relative">
             <Hero />
             <Companies />
+            <Whychooseus/>
             <Features />
             <Analysis />
             <Integration />
