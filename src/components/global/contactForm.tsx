@@ -179,7 +179,7 @@ export default function ContactPage() {
   )
 
   return (
-    <div className="min-h-screen bg-gray-950 relative overflow-hidden">
+    <div className="min-h-screen bg-gray-950 relative overflow-hidden md:mb-0 md:mt-0 mb-8 mt-8">
       <GeometricBackground />
 
       {/* Main Content */}

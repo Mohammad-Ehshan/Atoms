@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { subheading } from "@/constants/fonts";
 import Navbar from "@/components/marketing/navbar";
 import Footer from "@/components/marketing/footer";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = generateMetadata();
 
@@ -26,6 +27,7 @@ export default function RootLayout({
       >
         <Toaster richColors theme="dark" position="top-right" />
         <Navbar />
+        <Analytics/>
         {children}
         <Footer />
       </body>

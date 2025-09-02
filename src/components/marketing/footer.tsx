@@ -13,9 +13,21 @@ import {
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Linkedin, href: "https://www.linkedin.com/in/mohammad-ehshan-4362a0298", label: "LinkedIn" },
-    { icon: Instagram, href: "https://www.instagram.com/hackathonwalebhaiya", label: "Instagram" },
-    { icon: IconBrandTelegram, href: "https://t.me/+dFcwrZKd88FiZjU1", label: "Telegram" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/mohammad-ehshan-4362a0298",
+      label: "LinkedIn",
+    },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/hackathonwalebhaiya",
+      label: "Instagram",
+    },
+    {
+      icon: IconBrandTelegram,
+      href: "https://t.me/+dFcwrZKd88FiZjU1",
+      label: "Telegram",
+    },
     { icon: Twitter, href: "https://x.com/ashmes16", label: "Twitter" },
   ];
 
@@ -46,7 +58,8 @@ export default function Footer() {
               <img src="./icons/icon.png" alt="logo" height={70} width={70} />
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
-              We Code, We Create, We Launch - With Results That Speak Louder Than Just Design.
+              We Code, We Create, We Launch - With Results That Speak Louder
+              Than Just Design.
             </p>
 
             <div className="space-y-3">
@@ -103,13 +116,23 @@ export default function Footer() {
 
             <div className="mt-8">
               <h5 className="text-lg font-semibold mb-3">Newsletter</h5>
-              <div className="flex">
+              {/* <div className="flex ">
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-purple-500 text-white"
+                  className="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-purple-500 text-white "
                 />
-                <button className="px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-lg hover:from-purple-700 hover:to-pink-700 transition-colors duration-300">
+                <button className="px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-r-lg hover:from-purple-700 hover:to-pink-700 transition-colors duration-300 ">
+                  Subscribe
+                </button>
+              </div> */}
+              <div className="flex flex-wrap md:flex-nowrap w-full">
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  className="flex-1 min-w-0 px-4 py-2 bg-gray-800 border border-gray-700 rounded-t-lg md:rounded-l-lg md:rounded-t-none focus:outline-none focus:border-purple-500 text-white"
+                />
+                <button className="px-6 py-2 w-full md:w-auto bg-gradient-to-r from-purple-600 to-pink-600 rounded-b-lg md:rounded-r-lg md:rounded-b-none hover:from-purple-700 hover:to-pink-700 transition-colors duration-300">
                   Subscribe
                 </button>
               </div>
