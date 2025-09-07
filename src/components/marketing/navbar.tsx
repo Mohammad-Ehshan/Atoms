@@ -6,7 +6,7 @@ import MobileMenu from "./mobile-menu";
 
 const Navbar = () => {
   return (
-    <header className="sticky top-2 w-full lg:w-1/2 lg:mt-2 lg:rounded-full lg:mx-auto h-16 bg-background/80 backdrop-blur-sm z-50">
+    <header className="sticky top-2 w-full lg:w-1/2 lg:mt-2 lg:rounded-full lg:mx-auto h-16 bg-background/80 backdrop-blur-sm z-50 ">
      {/* <header className="sticky top-2 w-full lg:w-1/2 lg:mt-2 lg:rounded-full lg:mx-auto h-16 bg-gradient-to-r from-sky-600 to-blue-800 backdrop-blur-sm z-50"> */}
       <Wrapper className="h-full">
         <div className="flex items-center justify-between h-full">

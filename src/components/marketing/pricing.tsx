@@ -68,15 +68,15 @@ const Pricing = () => {
                 Technical Services
               </h3>
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-                {/* Starter Tech */}
+                {/* Starter Tier */}
                 <ServiceCard
-                  title="Starter Tech"
-                  price="₹9,999"
-                  description="Perfect for small businesses or personal projects"
+                  title="Starter Tier"
+                  price="₹14,499"
+                  description="One-page launch site for individuals & small businesses"
                   features={[
-                    "1-page website or simple mobile app",
-                    "Basic SEO setup",
-                    "1-month support",
+                    "1-page fully-responsive website",
+                    "Basic SEO setup & 1-month support",
+                    "Simple backend integration (forms/email)",
                   ]}
                   buttonText="Get Started"
                   color="gray"
@@ -85,13 +85,13 @@ const Pricing = () => {
                 {/* Professional Tech */}
                 <ServiceCard
                   title="Professional Tech"
-                  price="₹24,999"
-                  description="For growing businesses needing robust solutions"
+                  price="₹29,499"
+                  description="Growth-ready multi-page sites or simple apps"
                   features={[
-                    "Multi-page website or mobile app",
-                    "Backend integration",
-                    "3-month support",
-                    "SEO & analytics",
+                    "Multi-page website or simple mobile app",
+                    "Backend integration & on-demand AI integration",
+                    "3-month support & performance monitoring",
+                    "SEO analytics & reporting",
                   ]}
                   buttonText="Start Project"
                   color="blue"
@@ -102,12 +102,13 @@ const Pricing = () => {
                 <ServiceCard
                   title="Enterprise Tech"
                   price="Custom"
-                  description="Tailored solutions for large-scale projects"
+                  description="Tailored, scalable solutions for large projects"
                   features={[
-                    "Fully custom design & development",
-                    "Dedicated project manager",
-                    "Scalable infrastructure",
-                    "Ongoing maintenance",
+                    "Fully customized website or app",
+                    "UI/UX design & scalable infrastructure",
+                    "Integrated backend with advanced AI",
+                    "SEO optimization & advanced analytics",
+                    "Dedicated project manager & year-round support",
                   ]}
                   buttonText="Contact Sales"
                   color="purple"
